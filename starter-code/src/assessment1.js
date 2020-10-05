@@ -37,7 +37,12 @@ console.log(total)
 // Return the largest number of a non-empty array
 function maxOfArray(numbers) {
   //
+  if (numbers.length == 0)
+  return 0;
 }
+return Math.max.apply(null, numbers);
+};
+console.log(maxOfArray([]))
 
 // Return the longest string in an array
 //function longestString(strings) {}
